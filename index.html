@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador de numeros Aleatorios</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- o defer espera o site carregar - como se colocasse o script no final -->
+    <script src="./assets/js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Sorteador de Números Aleatórios</h1>
+    </header>
+
+    <main class="sorteio-numeros__main">
+
+        <!-- sliders dos valores -->
+
+        <div class="sorteio-numeros__input">
+
+        <!-- valor minimo -->
+        <span class="sorteio-numeros__texto">Valor mínimo: <span class="sorteio-numeros__tamanho-minimo"></span></span>
+        <!-- Controle deslizante para selecionar o tamanho da senha -->
+        <input class="sorteio-numeros__slider-minimo" type="range" min="1" max="100" value="1"/>
+
+        <!-- valor maximo -->
+        <span class="sorteio-numeros__texto">Valor máximo: <span class="sorteio-numeros__tamanho-maximo"></span></span>
+        <!-- Controle deslizante para selecionar o tamanho da senha -->
+        <input class="sorteio-numeros__slider-maximo" type="range" min="1" max="100" value="1"/>
+
+        </div>
+
+        <!-- sortear os numeros -->
+
+        <div class="sorteio-numeros__resultado hide">            
+            <div class="sorteio-numeros__button-container">
+            <button class="sorteio-numeros__button">Sortear</button>
+            </div>
+            <span class="password-generator__saida"></span>
+        </div>
+
+        <!-- historico -->
+        <div class="sorteio-numeros__historico">
+            <h2>Histórico</h2>
+            <span>1</span>
+        </div>
+
+        <!-- botao limpar -->
+        <div class="sorteio-numeros__button-container">
+            <button class="sorteio-numeros__button password-generator__button--clear">Limpar histórico</button>
+        </div>
+
+
+    </main>
+</body>
+</html>
