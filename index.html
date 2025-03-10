@@ -23,12 +23,12 @@
         <div class="sorteio-numeros__input">
 
         <!-- valor minimo -->
-        <span class="sorteio-numeros__texto">Valor mínimo: <span class="sorteio-numeros__tamanho-minimo"></span></span>
+        <label class="sorteio-numeros__texto">Valor mínimo: <label class="sorteio-numeros__tamanho-minimo"></label></label>
         <!-- Controle deslizante para selecionar o tamanho da senha -->
         <input class="sorteio-numeros__slider-minimo" type="range" min="1" max="100" value="1"/>
 
         <!-- valor maximo -->
-        <span class="sorteio-numeros__texto">Valor máximo: <span class="sorteio-numeros__tamanho-maximo"></span></span>
+        <label class="sorteio-numeros__texto">Valor máximo: <label class="sorteio-numeros__tamanho-maximo"></label></label>
         <!-- Controle deslizante para selecionar o tamanho da senha -->
         <input class="sorteio-numeros__slider-maximo" type="range" min="1" max="100" value="1"/>
 
@@ -40,18 +40,20 @@
             <div class="sorteio-numeros__button-container">
             <button class="sorteio-numeros__button">Sortear</button>
             </div>
-            <span class="password-generator__saida"></span>
+            <span class="sorteio-numeros__saida"></span>
         </div>
 
         <!-- historico -->
         <div class="sorteio-numeros__historico">
-            <h2>Histórico</h2>
-            <span>1</span>
+            <h2 class="sorteio-numeros__titulo-historico">Histórico</h2>
+            <ul class="sorteio-numeros__lista-historico">
+                <li class="sorteio-numeros__item-lista"></li>
+            </ul>
         </div>
 
         <!-- botao limpar -->
         <div class="sorteio-numeros__button-container">
-            <button class="sorteio-numeros__button password-generator__button--clear">Limpar histórico</button>
+            <button class="sorteio-numeros__button sorteio-numeros__button--clear">Limpar histórico</button>
         </div>
 
 
